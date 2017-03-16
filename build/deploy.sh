@@ -1,13 +1,12 @@
 #!/usr/bin/env sh
-
 APPNAME=testapp
 
-mkdir -p /code/${appname}
+mkdir -p /code/${APPNAME}
 
-CURRENT_DEPLOYMENT_FILE=/code/${appname}/current
-BLUE_DIRECTORY=/code/${appname}/blue
-GREEN_DIRECTORY=/code/${appname}/green
-LIVE_SYMLINK_PATH=/code/${appname}/live
+CURRENT_DEPLOYMENT_FILE=/code/${APPNAME}/current
+BLUE_DIRECTORY=/code/${APPNAME}/blue
+GREEN_DIRECTORY=/code/${APPNAME}/green
+LIVE_SYMLINK_PATH=/code/${APPNAME}/live
 
 if [ -e ${CURRENT_DEPLOYMENT_FILE} ]
 then
