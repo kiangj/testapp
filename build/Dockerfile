@@ -3,9 +3,9 @@ FROM alpine
 VOLUME /code
 
 ADD code /stage/
-ADD deploy.sh /
+ADD build/deploy.sh /
 
 ADD build/configs /stageConfig/
-ADD deploy_config.sh
+ADD build/deploy_config.sh
 
 CMD /deploy_config.sh && /deploy.sh
