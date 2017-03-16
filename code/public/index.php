@@ -6,4 +6,4 @@
  * Time: 11:41 AM
  */
 
-phpinfo();
+echo "Hello World!";
